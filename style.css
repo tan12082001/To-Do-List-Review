@@ -1,0 +1,168 @@
+:root {
+  --bottom-border-color: #d1d1d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16% 0;
+}
+
+main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
+
+.ifempty {
+  display: flex;
+  font-style: italic;
+  color: #f30d0d;
+  padding: 4px;
+}
+
+.smiley {
+  font-style: normal;
+}
+
+.div-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--bottom-border-color);
+  padding: 12px;
+  align-items: center;
+}
+
+.reload-image {
+  width: 24px;
+  height: 24px;
+}
+
+.list-adding {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid var(--bottom-border-color);
+  display: flex;
+  align-items: center;
+}
+
+.list-adding:hover {
+  background: #e4e4ff;
+  border: 1px solid #86f91f;
+}
+
+#add-new-list {
+  width: 100%;
+  padding: 4px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#add-new-list::placeholder {
+  font-style: italic;
+}
+
+.addbutton {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.addicon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.addicon:hover {
+  transform: scale(1.2);
+}
+
+ul#to-do-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 20px;
+}
+
+li.each-task {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--bottom-border-color);
+}
+
+.each-task:hover {
+  background-color: #c6edfd;
+}
+
+.check-tag {
+  display: flex;
+  gap: 12px;
+  width: 80%;
+}
+
+input.task-desc {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.funs {
+  display: flex;
+  align-items: center;
+}
+
+.delbin {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.three-dots {
+  width: 20px;
+  height: 20px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.three-dots:hover {
+  transform: scale(1.1);
+}
+
+.clear-all {
+  display: flex;
+  width: 100%;
+  padding: 17px;
+  justify-content: center;
+  background: #f1f1f4;
+  border: none;
+  outline: none;
+}
+
+.clear-all:hover {
+  background-color: #a7e76f;
+}
